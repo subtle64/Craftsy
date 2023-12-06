@@ -17,6 +17,8 @@ class Review extends Model
         return $this->belongsTo('App\Models\User');
     }
 
+    public $timestamps = false;
+
     protected $fillable = [
         'rating',
     ];

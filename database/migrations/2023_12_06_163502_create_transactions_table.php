@@ -11,11 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('reviews', function (Blueprint $table) {
-            $table->id();
-            $table->integer('rating');
+        Schema::create('transactions', function (Blueprint $table) {
+            $table->unsignedBigInteger('id');
+            $table->integer('qty');
             $table->foreignId('user_id')->constrained();
             $table->foreignId('item_id')->constrained();
+            $table->date('date');
+            $table->primary(['id', 'user_id', 'item_id']);
         });
     }
 
@@ -24,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('reviews');
+        Schema::dropIfExists('transactions');
     }
 };

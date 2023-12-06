@@ -20,6 +20,8 @@ class Shop extends Model
         'password'
     ];
 
+    public $timestamps = false;
+
     protected $hidden = [
         'password',
     ];

@@ -13,12 +13,11 @@ return new class extends Migration
     {
         Schema::create('items', function (Blueprint $table) {
             $table->id();
-            $table->binary('image');
-            $table->string('name', 30);
+            $table->string('image_path');
+            $table->string('name', 50);
             $table->string('type', 30);
             $table->double('price');
             $table->foreignId('shop_id')->constrained();
-            $table->timestamps();
         });
     }
 

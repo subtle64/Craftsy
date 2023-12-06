@@ -21,10 +21,12 @@ class Item extends Model
         return $this->belongsTo('App\Models\Shop');
     }
 
+    public $timestamps = false;
+
     protected $fillable = [
         'image',
         'name',
         'type',
-        'price'
+        'price',
     ];
 }
