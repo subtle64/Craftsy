@@ -6,7 +6,6 @@
         
         <div class="d-flex m-3 align-items-center w-50">
             <form action="/search" method="GET" class="d-flex m-3 align-items-center w-100">
-                  @csrf
                 <input class="form-control me-2 rounded-5" type="text" placeholder="Search" aria-label="Search" name="search">
                 <button class="btn rounded-5" type="submit" style="background-color: #C8B6A6; font-family: Tahoma">Search</button>
             </form>  
