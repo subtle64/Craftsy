@@ -10,12 +10,12 @@
 
 <div class="d-flex flex-column mt-5 p-5">
     <div class = "d-flex flex-column">
-        <h2 style="color:rgb(141,123,104); font-family:Abhaya Libre ExtraBold;font-weight: 800; font-size:36px;">Search results for: <u>{{ $search }}</u></h2>
+        <h2 style="color:rgb(141,123,104); font-family:Abhaya Libre ExtraBold;font-weight: 800; font-size:36px;">{{ $heading }}<u>{{ $search }}</u></h2>
         <p style="font-weight: 300; font-size:20px;">{{ $error }}</p>
     </div>
     <div class = "d-flex">
         @foreach($items as $i)
-        <a href="#" class="m-2" style="text-decoration: none; width: 15%;">
+        <a href="{{"/item/$i->id"}}" class="m-2" style="text-decoration: none; width: 15%;">
             @component('components.product_card')
             @slot('image')
             {{ $i->image_path }}

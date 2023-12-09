@@ -23,4 +23,9 @@ class HomeController extends Controller
         
         return view('home', compact('categories', 'items'));
     }
+
+
+    public function about() {
+        return view('about');
+    }
 }

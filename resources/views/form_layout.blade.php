@@ -12,13 +12,11 @@
     <title>@yield('title')</title>
     <style>
         .no-gutter > [class*='col-'] {
-            padding-right:0;
-            padding-left:0;
+            padding:0;
         }
     </style>
 </head>
-<body style = "overflow-x:hidden;">
-    @include('components.navbar')
+<body style="max-width: 100vw; overflow-x: hidden;">
     @yield('content')
     @include('components.footer')
 </body>

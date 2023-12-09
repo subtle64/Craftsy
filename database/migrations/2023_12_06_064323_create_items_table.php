@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('image_path');
             $table->string('name', 50);
             $table->string('type', 30);
+            $table->integer('stock');
             $table->double('price');
             $table->foreignId('shop_id')->constrained();
         });

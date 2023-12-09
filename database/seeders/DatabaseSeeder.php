@@ -43,6 +43,7 @@ class DatabaseSeeder extends Seeder
                 'name' => 'Lily of the Valley Bunnie Figurine',
                 'type' => 'Plushies',
                 'price' => 30.0,
+                'stock' => 150,
                 'shop_id' => 1,
             ],
             [
@@ -50,6 +51,7 @@ class DatabaseSeeder extends Seeder
                 'name' => 'Camelia Bag',
                 'type' => 'Bags',
                 'price' => 40.0,
+                'stock' => 150,
                 'shop_id' => 1
             ],
             [
@@ -57,6 +59,7 @@ class DatabaseSeeder extends Seeder
                 'name' => 'Miffy Jam Cookies Keychain',
                 'type' => 'Keychains',
                 'price' => 45.0,
+                'stock' => 150,
                 'shop_id' => 1
             ],
             [
@@ -64,6 +67,7 @@ class DatabaseSeeder extends Seeder
                 'name' => 'Kitty Cupcake Keychain',
                 'type' => 'Keychains',
                 'price' => 25.0,
+                'stock' => 150,
                 'shop_id' => 1
             ],
             [
@@ -71,6 +75,7 @@ class DatabaseSeeder extends Seeder
                 'name' => 'Snorlax Plushie',
                 'type' => 'Plushies',
                 'price' => 40.0,
+                'stock' => 150,
                 'shop_id' => 1
             ],
             [
@@ -78,6 +83,7 @@ class DatabaseSeeder extends Seeder
                 'name' => 'Bunny in Overall',
                 'type' => 'Plushies',
                 'price' => 40.0,
+                'stock' => 150,
                 'shop_id' => 1
             ],
         ]);
