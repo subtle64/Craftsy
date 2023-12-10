@@ -10,7 +10,7 @@ class Cart extends Model
     use HasFactory;
 
     public function item() {
-        return $this->hasMany('App\Models\Item');
+        return $this->belongsTo('App\Models\Item');
     }
 
     public function user() {
@@ -20,6 +20,8 @@ class Cart extends Model
     public $timestamps = false;
 
     protected $fillable = [
+        'user_id',
+        'item_id',
         'quantity',
     ];
 }

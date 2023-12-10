@@ -64,7 +64,7 @@
                                 <hr style="border:2px solid #8D7B68">
                                 <div class="text-center">
                                     <h1 style="font-family:Abhaya Libre ExtraBold;color:#8D7B68;font-size:25px;">Don't have an account yet?</h1>
-                                    <button type="submit" class="btn btn-block btn-user text-white btn-hover" style="background-color: #8D7B68; width: fit-content; font-size: 20px; padding: 10px; border-radius: 25px">Register </button>
+                                    <a href = "/register" class="btn btn-block btn-user text-white btn-hover" style="background-color: #8D7B68!important; width: fit-content; font-size: 20px; padding: 10px; border-radius: 25px">Register</a>
                                 </div>
                             </div>
                         </div>

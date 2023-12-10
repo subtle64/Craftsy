@@ -10,7 +10,7 @@ class Review extends Model
     use HasFactory;
 
     public function item() {
-        return $this->hasMany('App\Models\Item');
+        return $this->hasOne('App\Models\Item');
     }
 
     public function user() {

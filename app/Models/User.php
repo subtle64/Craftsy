@@ -13,11 +13,11 @@ class User extends Authenticatable
     use HasApiTokens, HasFactory, Notifiable;
 
     public function cart() {
-        return $this->hasOne('App\Models\Cart');
+        return $this->hasMany('App\Models\Cart');
     }
 
     public function review() {
-        return $this->hasMany('App\Models\Review');
+        return $this->hasOne('App\Models\Review');
     }
 
 

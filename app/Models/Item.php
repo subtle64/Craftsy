@@ -10,7 +10,7 @@ class Item extends Model
     use HasFactory;
 
     public function cart() {
-        return $this->belongsToMany('App\Models\Cart');
+        return $this->hasOne('App\Models\Cart');
     }
 
     public function review() {

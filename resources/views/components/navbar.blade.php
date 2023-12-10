@@ -16,11 +16,7 @@
             <a href="/login" class="btn rounded-5 m-3" style="background-color: #C8B6A6">Sign In</a>
             <a href="/register" class="btn rounded-5 me-3 mt-3 mb-3" style="background-color: #C8B6A6">Register</a>
             @endguest
-
-            <a href="">
-                <i class="glyphicon glyphicon-heart m-4" style="color: black"></i>
-            </a>
-            <a href="">
+            <a href="/cart">
                 <i class="glyphicon glyphicon-shopping-cart me-4" style="color: black"></i>
             </a>
 
@@ -30,6 +26,7 @@
                     <span>Welcome, {{ Auth::user()->name }}!&nbsp;<i class="glyphicon glyphicon-user"></i></span>
                 </a>
                 <ul class="dropdown-menu">
+                    <a class = "dropdown-item" href="/history">Transaction History</a>
                     <form action="/logout" method = "POST">
                         @csrf
                         <button class = "dropdown-item" type="submit">Logout</button>
